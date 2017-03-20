@@ -1,5 +1,5 @@
 FROM scratch
-MAINTAINER silverwind
+MAINTAINER crazyquark
 
 COPY registry /registry
 COPY config.yml /config.yml

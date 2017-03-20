@@ -1,5 +1,5 @@
-NAME = silverwind/armhf-registry
-VERSION = 0.3.1
+NAME = crazyquark/armhf-registry
+VERSION = 0.3.2
 IS_ARM := $(shell uname -m | grep -E "^arm")
 
 ifeq ($(IS_ARM), )

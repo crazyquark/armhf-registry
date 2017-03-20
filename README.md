@@ -3,12 +3,10 @@
 Minimal [Docker Registry](https://docs.docker.com/registry/) image for the ARM architecture, built from the `scratch` image. Current image size is 11 MiB. ARMv5 and up are supported.
 
 ## Setup
+Install golang 1.5+  
+
 ````sh
-$ sudo apt-get install golang-1.6
-$ mkdir -p ~/go
-$ export GOPATH=~/go
-$ make
-$ docker build --tag=crazyquark/armhf-registry --rm=true .  
+$ make build
 $ docker run -d -v /srv/registry/data:/data -p 5000:5000 --name registry crazyquark/armhf-registry
 ````
 
