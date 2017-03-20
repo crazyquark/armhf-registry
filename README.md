@@ -4,7 +4,8 @@ Minimal [Docker Registry](https://docs.docker.com/registry/) image for the ARM a
 
 ## Example
 ````sh
-$ docker run -d -v /srv/registry/data:/data -p 5000:5000 --name registry silverwind/armhf-registry
+$ docker build --tag=crazyquark/armhf-registry --rm=true .  
+$ docker run -d -v /srv/registry/data:/data -p 5000:5000 --name registry crazyquark/armhf-registry
 ````
 
 ### Documentation
