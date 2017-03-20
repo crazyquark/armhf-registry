@@ -9,7 +9,7 @@ else
 endif
 
 $(BINARY):
-	CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=5 go get -a -ldflags '-s' github.com/docker/distribution/cmd/registry
+	CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 go get -a -ldflags '-s' github.com/docker/distribution/cmd/registry
 
 build: $(BINARY)
 	cp $(BINARY) .
