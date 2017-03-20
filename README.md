@@ -4,7 +4,7 @@ Minimal [Docker Registry](https://docs.docker.com/registry/) image for the ARM a
 
 ## Setup
 ````sh
-$ sudo apt-get install golang
+$ sudo apt-get install golang-1.6
 $ mkdir -p ~/go
 $ export GOPATH=~/go
 $ make
